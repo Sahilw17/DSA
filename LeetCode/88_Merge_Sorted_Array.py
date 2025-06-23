@@ -13,19 +13,22 @@ class Solution():
       # nums2=[x for x in nums2 if x!=0 ]
       # nums1=nums1[0:m]
       # nums2=nums2[0:n]
-      for i in range(n):
-         nums1[m+i]=nums2[i]
+      # for i in range(n):
+      #    nums1[m+i]=nums2[i]
       
-      temp=0
-      l=len(nums1)
+      # temp=0
+      # l=len(nums1)
 
-      for i in range (0,l):
-        for j in range (1,l-1-i):
-           if(nums1[j]>nums1[j+1]):
-              temp=nums1[j]
-              nums1[j]=nums1[j+1]
-              nums1[j+1]=temp
-      return nums1 
+      # for i in range (0,l):
+      #   for j in range (1,l-1-i):
+      #      if(nums1[j]>nums1[j+1]):
+      #         temp=nums1[j]
+      #         nums1[j]=nums1[j+1]
+      #         nums1[j+1]=temp
+      # return nums1 
+        for i in range(n):
+            nums1[m+i]=nums2[i]
+        return nums1.sort()
     
 m=Solution()
 l1=[2,0]
